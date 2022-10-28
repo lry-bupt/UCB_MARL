@@ -1,8 +1,8 @@
 # UCB_MARL
 
-**Note:** All code and demonstrations are used for our paper:
+**Note:** All code and demonstrations are used for the submitted paper:
 
-> Ruyu Luo, Wanli Ni, and Hui Tian, "Multi-Agent Reinforcement Learning for Industrial Data Collection with Mobile Robots" .
+> Ruyu Luo, Wanli Ni, Hui Tian, Julian Cheng, and Kwang-Cheng Chen, "Joint Trajectory and Radio Resource Optimization by Multi-Agent Reinforcement Learning for Autonomous Mobile Robots in Industrial Internet of Things", submitted to IEEE TVT, Nov. 2022.
 
 In this paper, we present the simulation codes of multi-agent reinforcement learning (MARL) with upper-confidence bound (UCB) exploration.
 
@@ -14,19 +14,25 @@ Here are the setting of our simulations.
 
 | Notation     | Simulation Value   | Physical Meaning                                             |
 | ------------ | ------------------ | ------------------------------------------------------------ |
-| $ M_k $      | $3$                | the number of SNs in each group                              |
+| $M_k$      | $3$                | the number of SNs in each group                              |
 | $x _{\max} $ | $30 {\ \rm m}$     | the maximal x-axis size of  the moving area                  |
 | $y _{\max} $ | $30 {\ \rm m}$     | the maximal y-axis size of  the moving area                  |
 | $H_0$        | $1 {\ \rm m}$      | the antenna height of robots                                 |
-| $H_m$        | $ \{0, 1, 2\}$     | the antenna height of SNs                                    |
+| $H_m$        | $\{0, 1, 2\}$     | the antenna height of SNs                                    |
 | $\sigma^2$   | $-100 \ {\rm dBm}$ | the power of the AWGN                                        |
-| ${P_{\max}$  | $23 \ {\rm dBm}$   | the maximum transmit power                                   |
+| $P_{\max}$  | $23 \ {\rm dBm}$   | the maximum transmit power                                   |
 | $\beta_{0}$  | $-30 \ {\rm dB}$   | the large-scale channel power gain at the reference distance  $d_0 = 1 \ {\rm m} $ |
 | $\alpha$     | $2.2$              | the path loss exponent                                       |
 | $G$          | $10 \ {\rm dB}$    | the Rician factor                                            |
 | $\Delta_{s}$ | $1.5 \ {\rm m}$    | the grid size                                                |
 
-
+### Representative visualization results
+The visualization of the proposed MARL can be seen in [Visual_MARL](https://github.com/lry-bupt/Visual_MARL).
++ Here are four demonstrations for different stages in the MARL training process.
+  + the beginning of training  <img src="https://github.com/lry-bupt/Visual_MARL/blob/main/visualization%20tool/result/demo2.gif" alt="show" height="200" width="200" /> 
+  + 800 rounds of training &emsp; <img src="https://github.com/lry-bupt/Visual_MARL/blob/main/visualization%20tool/result/demo3.gif" alt="show" height="200" width="200" />
+  + 1600 rounds of training &nbsp; <img src="https://github.com/lry-bupt/Visual_MARL/blob/main/visualization%20tool/result/demo4.gif" alt="show" height="200" width="200" /> 
+  + the end of training &emsp;&emsp;&nbsp;<img src="https://github.com/lry-bupt/Visual_MARL/blob/main/visualization%20tool/result/demo1.gif" alt="show" height="200" width="200" />
 
 ### Source Codes
 
@@ -63,7 +69,7 @@ Here is a simple introduction to the code used in our paper.
 
 
 
-- #### Figure_3_robot_trajectory (Robot trajectory under different $\kappa_1$)
+- #### Figure_3_robot_trajectory (Robot trajectory under different $\kappa$)
 
   - [RL_brain.py](https://github.com/lry-bupt/UCB_MARL/blob/main/Figure_3_robot_trajectory/RL_brain.py): &nbsp;One learning agent with upper-confidence bound (UCB) exploration
   - [plot_figure.py](https://github.com/lry-bupt/UCB_MARL/blob/main/Figure_3_robot_trajectory/plot_figure.py): &nbsp; The trajectories with different reward policy
