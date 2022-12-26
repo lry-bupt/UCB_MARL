@@ -2,7 +2,7 @@
 
 **Note:** All code and demonstrations are used for the submitted paper:
 
-> Ruyu Luo, Wanli Ni, Hui Tian, Julian Cheng, and Kwang-Cheng Chen, "Joint Trajectory and Radio Resource Optimization by Multi-Agent Reinforcement Learning for Autonomous Mobile Robots in Industrial Internet of Things", submitted to IEEE TVT, Nov. 2022.
+> Ruyu Luo, Wanli Ni, Hui Tian, Julian Cheng, and Kwang-Cheng Chen, "Joint Trajectory and Radio Resource Optimization by Multi-Agent Reinforcement Learning for Autonomous Mobile Robots in Industrial Internet of Things", submitted to IEEE TCom, Dec. 2022.
 
 In this paper, we present the simulation codes of multi-agent reinforcement learning (MARL) with upper-confidence bound (UCB) exploration.
 
